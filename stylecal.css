@@ -1,0 +1,158 @@
+
+*
+{
+    box-sizing: border-box;
+    font-size: 50px;
+    margin: 0 auto;
+    padding: 0;
+}
+body {
+    font-family: monospace;
+    text-align: center;
+    background-color: var( --final);
+}
+main
+{
+    display: flex;
+    flex-direction: row;
+}
+.calculator {
+    min-width: 20rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border-right: 0.2rem solid var(--primary);
+    border-left: 0.2rem solid var(--primary) ;
+    border-bottom: 0.2rem solid var(--secondary);
+    border-top: 0.2rem solid var(--secondary);
+    border-radius: 46px;
+    box-shadow: 0 0 2rem var(--text);
+    background-color:var(--almost);
+    height: max-content;
+}
+.calculator input[type="text"] {
+    width: 100%;
+    font-size: 1rem;
+    text-align: right;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 16px;
+    border:0.rem solid var(--primary);
+    background-color: white;
+}
+.calculator button {
+    width: 100px;
+    height: 100px;
+    font-size: 1rem;
+    margin: 0.3rem;
+    cursor: pointer;
+    color: var(--text);
+    border-radius: 16px;
+    background-color: var(--tertiary);
+    border-left:solid 0.2rem var(--primary);
+    border-top:solid 0.2rem var(--primary);
+    border-bottom:solid 0.2rem var(--secondary) ;
+    border-right:solid 0.2rem var(--secondary);
+}
+.calculator button:hover {
+    background-color:var(--seven);
+}
+#cool{
+    color: var(--random);
+    max-width:fit-content;
+    font-size: 3.4rem;
+    text-shadow: 5px 2px 1px var(--secondary);
+}
+#cal
+{
+    display: flex;
+
+}
+#side_btn
+{
+    display: flex;
+    flex-direction: column;
+}
+button.side_button
+{
+    background-color:var(--fourth);
+}
+button.side_button:hover
+{
+    background-color:var(--secondary);
+}
+#equate:hover
+{
+ background-color:var(--fifth);
+}
+#math
+{
+    min-width:fit-content;
+    font-family: monospace;
+    padding:0.1rem;
+}
+#justWHY
+{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+p
+{
+    min-width:10rem;
+    font-size: 0.5rem;
+    text-align: start;
+    margin: 2rem;
+    height: auto;
+
+}
+#desc_text
+{
+    color: var(--text);
+}
+#prompts
+{
+    font-size: 2rem;
+    margin-left: 5rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 5px 2px 1px var(--secondary);
+    color: var(--random);
+}
+#night
+{
+    margin: 10%;
+    background-color:var(--final);
+    border: none;
+    color: var(--text);
+}
+
+:root
+{
+ --primary : #5f90d5;
+ --secondary : #42669a;
+ --tertiary: rgb(213, 222, 239);
+ --fourth:#6f9cdd;
+ --fifth:rgb(224, 199, 168)
+ --sixth:#1151d2;
+ --seven:hsl(0, 1%, 73%);
+ --random:#b1bcf6;
+ --almost:#b1bcf6;
+ --final:#FFFFFF;
+ --text: black;
+}
+.dark_colors
+{
+    --primary : rgb(46, 70, 103);
+    --secondary : #18273a;
+    --tertiary: rgb(59, 61, 63);
+    --fourth:#303e53;
+    --fifth:rgb(104, 100, 94);
+     --sixth:#0e1d3b;
+     --seven:hsl(217, 24%, 17%);
+     --random:#ebedf5;
+     --almost:#191b23;
+     --final:#262a41;
+     --text: rgb(255, 255, 255);
+  
+}
